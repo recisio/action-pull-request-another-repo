@@ -1,10 +1,9 @@
-FROM alpine:3.17
+FROM alpine:edge
 
 RUN apk update && \
     apk upgrade && \
     apk add git && \
     apk add go && \
-    apk add make && \
     apk add make && \
     apk add rsync && \
     apk add jq && \
